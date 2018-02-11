@@ -1,0 +1,218 @@
+java:
+
+spring 
+hibernate
+
+
+spring orm:
+
+hibernate
+
+spring mvc
+spring core
+spring boot
+
+core java->spring core
+
+web technology:
+jsp 
+servlets->tomcat support servlets
+
+rest api works:
+
+jersy framework
+REST WORK on jersey
+rest PI for spring rest
+
+jdbc:
+hibernate->
+
+
+
+cookies:
+personalise web site for user
+
+keep trackers
+->java
+->track the user
+->keep track of wht user used
+
+cookie:
+->text data exchanegd betweem web browser and server
+
+name/value pair:
+->multiple cookie
+disable->firefox->perferenece->privacy->remove individual cookies
+
+javax.servlet.http--->cookie class
+
+Cookie(String name,String Value);
+
+
+JSP Tags:
+
+jsp custom tags
+jsp standard tag libaray(JSTL)
+
+jsp custom  tags:
+minimise the scriplet tag
+avoid dumping 1000 of lines
+jsp page is simple 
+tags is reusable
+
+
+tag lib:
+
+JSTL
+core tags
+messagetag I18N
+function tags
+xml tags
+sql tags
+
+JSP tags:
+1->add this:
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>  
+
+2->display in the sever JSP
+
+
+core tags:
+
+catch tags: catches any throwable to occurs
+choose tags: conditional tags
+if tags: simple if/then conditional
+import tags: retrieves a URL
+forEach: collections of value
+forTokens: collections of token
+out : displaying output
+otherwise: <choose>
+param: add param URL
+redirect: new URL
+remove: remove scoped variables
+set: assigns an expression
+url: define a URL
+when: <choose> tag
+
+for each:
+<%
+string[] citites={"mumbai","singapore"};
+pageContext.setAttribute("mycities",citites);
+%>
+
+<body>
+<c:forEach var="tempcity" items="${mycities}">
+${tempcity} <br/>
+</c:forEach>
+</body>
+
+JSTL(for-each):
+
+pojo class:
+
+student.java:
+
+private String firstName;
+private String lastname;
+private String goldCusotmer;
+getter & setters
+constructor using fields
+
+new jsp:
+
+<%
+List<Student> data=new ArrayList<>();
+data.add(new Student("john","Doe",false);
+data.add(new Student("ram","Johnson",false);
+data.add(new Student("sandy","doe",true);
+pageContext.setAttribute("mystudent",data);
+%>
+
+<body>
+<c:forEach var="tempStudent" items="${mystudent}">
+${tempStudent.firstname},
+${tempStudent.lastname},
+${tempStudent.goldCusotmer}
+<br/>
+</c:forEach>
+
+// will display the pojo class value in JSP page.
+
+<c:if test="${tempStudent.goldSutomer}">
+special discount
+</c:if>
+
+<c:if test="${not tempStudent.goldSutomer}">
+no discount
+</c:if>
+
+switch statment JSTL:
+
+using choose:
+
+<c:choose>
+<c:when test="${tempStudent.goldSutomer}">
+special discount
+</c:when>
+
+<c:otherwise>
+no soup for you!
+</c:otherwise>
+
+</c:choose>
+
+
+
+functional tags:
+
+collections length:
+legth
+
+string manipulation:
+toUpperCase,toLowerCase
+subString,subStringAfter,substringBefore
+trim,replace,indexOf,startsWith,endsWith
+contains,containsIgnoreCase,split,join,escapexml
+
+length:
+
+<c:set var="data" value="luv2code"/>
+Length of the String <b>${data}</b> ${fn:length(data)}
+
+${fn:length(data)}
+${fn:toUpperCase(data)}
+${fn:startsWith(data,"luv")}
+
+split and join:
+
+fn:split()
+<c:set var="citiesArray" value=
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
